@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container p-5">
+    <div class="card desc">
+        <div class="card-body">
+            <h3 class="card-title">About</h3>
+            <p class="card-text"></p>
+            In continuation, Alembic stepped up in improving health, production and reproductive performance of
+            livestock,
+            companion animals and Aves in the year 1987. Alembic Veterinary division works on the principle of
+            Excellence,
+            Expertise and Economy with the help of highly appreciated products such as Moxel, Mceft, Xceft, Sharkoferrol
+            Vet, Poron and Ascal Gold for livestock whereas Azithral SP, Althrocin FS, Sharkoferrol P and Q4ALL.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <table class="table table-sm table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Index</th>
+                <th scope="col">Name</th>
+                <th scope="col">Composition</th>
+                <th scope="col">Benefits</th>
+                <th scope="col">Dossage</th>
+                <th scope="col">Package</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for obj in data %}
+            <tr>
+                <td scope='row'>{{forloop.counter}}</td>
+                <td scope='row'>{{obj.name}}</td>
+                <td scope='row'>{{obj.composition}}</td>
+                <td scope='row'>{{obj.benefits}}</td>
+                <td scope='row'>{{obj.dossage}}</td>
+                <td scope='row'>{{obj.package}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}
