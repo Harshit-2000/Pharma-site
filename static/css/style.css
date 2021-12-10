@@ -1,4 +1,52 @@
-.desc{
-    background-color: lightgray;
-    box-shadow: 2px;
+body {
+  position: relative;
+  min-height: 100vh;
+}
+.navbar {
+  background-color: aliceblue;
+}
+.desc {
+  background-color: aliceblue;
+  box-shadow: 2px 2px 2px 2px gainsboro;
+  border: none;
+}
+footer {
+  padding: 0 10%;
+  width: 100%;
+  background-color: rgb(50, 135, 214);
+  color: white;
+  margin-top: 5%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.company {
+  padding-top: 2%;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.copyright {
+  font-size: 0.8rem;
+  margin: 0;
+  text-align: center;
+}
+.owner {
+  margin-bottom: 0 !important;
+  padding-bottom: 2%;
+}
+tr:nth-child(even) {
+  background-color: aliceblue;
+}
+td,
+th {
+  max-width: 100px;
+  word-wrap: break-word;
+}
+.bottom {
+  color: ghostwhite;
+  padding: 0.5% 0 !important;
+  margin: 0 !important;
+  background-color: #009f3c;
+  width: 100%;
 }
